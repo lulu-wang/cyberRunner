@@ -29,7 +29,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject platformSpawner;
     public GameObject restartDisplay;
-    public GameObject effect;
+    //public GameObject effect;
+    
 
     public Text healthDisplay;
     public Text scoreDisplay;
@@ -114,7 +115,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 jumpVector = new Vector2(playerRB.velocity.x, jumpSpeed);
         playerRB.velocity = jumpVector;
-        Instantiate(effect, transform.position, Quaternion.identity);
+        //Instantiate(effect, transform.position, Quaternion.identity);
 
     }
 
@@ -128,6 +129,18 @@ public class PlayerController : MonoBehaviour
         currHealth -= 1;
         SetHealth(currHealth);
     }
+
+    void Heal(int dmg)
+    {
+        Debug.Log("heal 1");
+        if (currHealth <= 0)
+        {
+            Die();
+        }
+        currHealth += 1;
+        SetHealth(currHealth);
+    }
+
 
     void Attack()
     {
@@ -147,6 +160,12 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("wat");
             IncreaseScore(1);
+            Destroy(collision.gameObject);
+        }
+		if (collision.tag == "healer")
+		{
+            Heal(1);
+
             Destroy(collision.gameObject);
         }
     }

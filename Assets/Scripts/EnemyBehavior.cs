@@ -15,7 +15,7 @@ public class EnemyBehavior : MonoBehaviour
     public float startWaitTime;
     public float waitTimeMin;
     public float waitTimeMax;
-
+    public GameObject deatheffect;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +52,7 @@ public class EnemyBehavior : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.SendMessageUpwards("TakeDamage", 1);
+            Instantiate(deatheffect, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

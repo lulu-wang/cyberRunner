@@ -1,50 +1,27 @@
-﻿<Properties StartupConfiguration="{81864E55-D16A-B205-9096-BDCD93A2E1A4}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HealthTracker.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
     <Files>
-      <File FileName="Assets/Scripts/platformMove.cs" Line="20" Column="95" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="127" Column="34" />
-      <File FileName="Assets/Assets_from_tutorial/Assets/Scripts/Player.cs" Line="5" Column="1" />
-      <File FileName="Assets/Scripts/backgroundMove.cs" Line="15" Column="95" />
-      <File FileName="Assets/Assets_from_tutorial/Assets/Scripts/Spawner.cs" Line="34" Column="1" />
-      <File FileName="Assets/Scripts/PlatformSpawner.cs" Line="35" Column="39" />
-      <File FileName="Assets/Assets_from_tutorial/Assets/Scripts/ObstacleSpawn.cs" Line="1" Column="1" />
-      <File FileName="Assets/Assets_from_tutorial/Assets/Scripts/Obstacle.cs" Line="1" Column="1" />
-      <File FileName="Assets/Assets_from_tutorial/Assets/Scripts/Background.cs" Line="1" Column="1" />
-      <File FileName="Assets/Assets_from_tutorial/Assets/Scripts/Restart.cs" Line="9" Column="2" />
-      <File FileName="Assets/Assets_from_tutorial/Assets/Scripts/Score.cs" Line="21" Column="2" />
-      <File FileName="Assets/Assets_from_tutorial/Assets/Scripts/Destroyer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/groundSpawner.cs" Line="30" Column="10" />
-      <File FileName="Assets/Scripts/parallaxScroll.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/RestartGame.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/bulletMove.cs" Line="27" Column="49" />
-      <File FileName="Assets/Scripts/EnemyBehavior.cs" Line="55" Column="38" />
-      <File FileName="Assets/Scripts/enemyBulletBehavior.cs" Line="29" Column="10" />
-      <File FileName="Assets/Scripts/HealthUI.cs" Line="12" Column="6" />
-      <File FileName="Assets/Scripts/MoveWithSpeed.cs" Line="18" Column="95" />
-      <File FileName="Assets/Scripts/Health.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/MoveWithSpeed.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/backgroundMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/bulletController.cs" Line="20" Column="37" />
+      <File FileName="Assets/Scripts/EnemyBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/enemyBulletBehavior.cs" Line="14" Column="6" />
+      <File FileName="Assets/Scripts/platformMove.cs" Line="25" Column="49" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="165" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="gddproject2" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Assets_from_tutorial" expanded="True">
-                <Node name="Assets" expanded="True">
-                  <Node name="Scripts" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Scripts" expanded="True">
-                <Node name="PlatformSpawner.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="gddproject2" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>Assembly-CSharp.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="650975a9-3361-4c89-9257-0010ffc7a525" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

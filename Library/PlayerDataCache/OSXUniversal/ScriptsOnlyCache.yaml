@@ -18,11 +18,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -64,41 +59,41 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9678}
+      Script: {instanceID: 9676}
     - Class: 114
-      Script: {instanceID: 9840}
+      Script: {instanceID: 9736}
     - Class: 114
-      Script: {instanceID: 9880}
+      Script: {instanceID: 9766}
     - Class: 114
-      Script: {instanceID: 10280}
+      Script: {instanceID: 9842}
     - Class: 114
-      Script: {instanceID: 11124}
+      Script: {instanceID: 9884}
     - Class: 114
-      Script: {instanceID: 11494}
+      Script: {instanceID: 9936}
     - Class: 114
-      Script: {instanceID: 14670}
+      Script: {instanceID: 10286}
     - Class: 114
-      Script: {instanceID: 14672}
+      Script: {instanceID: 10350}
     - Class: 114
-      Script: {instanceID: 14688}
+      Script: {instanceID: 10524}
     - Class: 114
-      Script: {instanceID: 17940}
+      Script: {instanceID: 10530}
     - Class: 114
-      Script: {instanceID: 20586}
+      Script: {instanceID: 10586}
     - Class: 114
-      Script: {instanceID: 24856}
+      Script: {instanceID: 10670}
     - Class: 114
-      Script: {instanceID: 30630}
+      Script: {instanceID: 11150}
     - Class: 114
-      Script: {instanceID: 56320}
+      Script: {instanceID: 11392}
     - Class: 114
-      Script: {instanceID: 57488}
+      Script: {instanceID: 11448}
     - Class: 114
-      Script: {instanceID: 63216}
+      Script: {instanceID: 11482}
     - Class: 114
-      Script: {instanceID: 65120}
+      Script: {instanceID: 11530}
     - Class: 114
-      Script: {instanceID: 66954}
+      Script: {instanceID: 13212}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -120,6 +115,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: f538df72cb340a2693cf2655929d4c91
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Background
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -144,6 +145,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: d3bbd1f86b55a6168b664522b2cf57b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Destroyer
+  - hash:
+      serializedVersion: 2
+      Hash: 4a945a2a078883a454d7f52d598ebba8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerController
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -188,6 +201,12 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: 7b7512573af84b68acf80b32e3edefde
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Obstacle
+  - hash:
+      serializedVersion: 2
       Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -204,6 +223,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 459b50185a167c1d210a783633c72823
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveWithSpeed
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -308,6 +333,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: e8aa4335b3a62562813beb44a0c5bc59
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyBehavior
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -326,10 +357,40 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: b7c01533a820d6d9bda7423f809d8cd0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlatformSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 51691da268a6f320709f3d18c4b8cdee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RestartGame
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 73aef7f8f6cba6b3b22a71aff8779945
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Score
+  - hash:
+      serializedVersion: 2
+      Hash: 04da9eaf2ea8edeef9dd9cbf6ee0553b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: groundSpawner
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -350,6 +411,12 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: 067a184e248d9b5fe6a0775721211a0a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: platformMove
+  - hash:
+      serializedVersion: 2
       Hash: feb9a5a121d15fa3654d4e50a5233045
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -360,6 +427,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 353fbe3910c704f53b4b89ebace628f2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Spawner
+  - hash:
+      serializedVersion: 2
+      Hash: 78d419082f9df8da21b9c588f64b392e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObstacleSpawn
   - hash:
       serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
@@ -440,10 +519,28 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 82860ddf870a919f268c7b6f995112ab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: parallaxScroll
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Restart
+  - hash:
+      serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 4362fc6dfff9e6e80bdb0b69b7e2bef5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: backgroundMove
   - hash:
       serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
@@ -456,6 +553,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 20eecd39d98e65e767a99cd458479ee4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: enemyBulletBehavior
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -474,6 +577,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 3e313c2223dcf0e96c5ca833f452dcf4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: bulletController
   - hash:
       serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
@@ -534,120 +643,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: f538df72cb340a2693cf2655929d4c91
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Background
-  - hash:
-      serializedVersion: 2
-      Hash: d3bbd1f86b55a6168b664522b2cf57b3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Destroyer
-  - hash:
-      serializedVersion: 2
-      Hash: 0f5236714f39fa201f4e4d6e0a1b0631
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerController
-  - hash:
-      serializedVersion: 2
-      Hash: 7b7512573af84b68acf80b32e3edefde
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Obstacle
-  - hash:
-      serializedVersion: 2
-      Hash: 51691da268a6f320709f3d18c4b8cdee
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Player
-  - hash:
-      serializedVersion: 2
-      Hash: 73aef7f8f6cba6b3b22a71aff8779945
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Score
-  - hash:
-      serializedVersion: 2
-      Hash: 353fbe3910c704f53b4b89ebace628f2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Spawner
-  - hash:
-      serializedVersion: 2
-      Hash: 78d419082f9df8da21b9c588f64b392e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ObstacleSpawn
-  - hash:
-      serializedVersion: 2
-      Hash: 82860ddf870a919f268c7b6f995112ab
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: parallaxScroll
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Restart
-  - hash:
-      serializedVersion: 2
-      Hash: 4362fc6dfff9e6e80bdb0b69b7e2bef5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: backgroundMove
-  - hash:
-      serializedVersion: 2
-      Hash: 067a184e248d9b5fe6a0775721211a0a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: platformMove
-  - hash:
-      serializedVersion: 2
-      Hash: b7c01533a820d6d9bda7423f809d8cd0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlatformSpawner
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RestartGame
-  - hash:
-      serializedVersion: 2
-      Hash: 04da9eaf2ea8edeef9dd9cbf6ee0553b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: groundSpawner
-  - hash:
-      serializedVersion: 2
-      Hash: 649e341742529570820be34333d64cdc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemyBehavior
-  - hash:
-      serializedVersion: 2
-      Hash: efb608382f7ca08f8f6c668f7b2742a4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: bulletController
-  - hash:
-      serializedVersion: 2
-      Hash: 20eecd39d98e65e767a99cd458479ee4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: enemyBulletBehavior
-  - hash:
-      serializedVersion: 2
-      Hash: 459b50185a167c1d210a783633c72823
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MoveWithSpeed
   platform: 2
   scenePathNames:
   - Assets/Scenes/EndlessRunner.unity

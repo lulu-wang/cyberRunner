@@ -135,3 +135,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 10
+  deatheffect: {fileID: 3901957647716783628, guid: ad9ce5663299147d78fa9674e7116ec6,
+    type: 3}

@@ -8,6 +8,7 @@ public class bulletController : MonoBehaviour
     public float bulletSpeed;
     //public GameObject player;
     // Start is called before the first frame update
+    public GameObject deatheffect;
     void Start()
     {
 
@@ -25,6 +26,7 @@ public class bulletController : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             //player.SendMessage("IncreaseScore", collision.gameObject.GetComponent<EnemyBehavior>().worth);
+            Instantiate(deatheffect, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
         }
     }
