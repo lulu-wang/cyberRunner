@@ -72,7 +72,12 @@
     <Compile Include="Assets\Assets_from_tutorial\Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Assets_from_tutorial\Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\backgroundMove.cs" />
+    <Compile Include="Assets\Scripts\bulletController.cs" />
+    <Compile Include="Assets\Scripts\EnemyBehavior.cs" />
+    <Compile Include="Assets\Scripts\enemyBulletBehavior.cs" />
     <Compile Include="Assets\Scripts\groundSpawner.cs" />
+    <Compile Include="Assets\Scripts\HealthTracker.cs" />
+    <Compile Include="Assets\Scripts\MoveWithSpeed.cs" />
     <Compile Include="Assets\Scripts\parallaxScroll.cs" />
     <Compile Include="Assets\Scripts\platformMove.cs" />
     <Compile Include="Assets\Scripts\PlatformSpawner.cs" />

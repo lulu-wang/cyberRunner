@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 96191089259212694}
   - component: {fileID: 96191089259212695}
   - component: {fileID: 7911212165836090416}
+  - component: {fileID: 8332323151748201084}
   m_Layer: 8
   m_Name: platform
   m_TagString: Untagged
@@ -122,7 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 3901957647716783628, guid: 1236f6c34a6cd4b5b887fbe7f9c50b6e, type: 3}
-  platformMoveSpeed: 3
 --- !u!114 &7911212165836090416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,3 +136,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 6
+--- !u!114 &8332323151748201084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96191089259212699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2669e4286947485e88fe29012d12a91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3

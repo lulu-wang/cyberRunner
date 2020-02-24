@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject bullet;
+
     public float jumpSpeed;
     private Rigidbody2D playerRB;
 
@@ -21,10 +24,18 @@ public class PlayerController : MonoBehaviour
     private int currHealth;
     public int extraJumps;
     private int currExtraJumps;
+    public int attackDamage;
+    public int score;
 
     public GameObject platformSpawner;
     public GameObject restartDisplay;
     public GameObject effect;
+
+    public Text healthDisplay;
+    public Text scoreDisplay;
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
 
 
 
@@ -33,7 +44,7 @@ public class PlayerController : MonoBehaviour
         playerRB = GetComponent<Rigidbody2D>();
         offscreenX = -5.0f;
         offscreenY = -3.44f;
-        currHealth = maxHealth;
+        currHealth = hearts.Length;
         currExtraJumps = extraJumps;
     }
 
@@ -41,11 +52,19 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currExtraJumps);
+        //Debug.Log(currExtraJumps);
+        healthDisplay.text = currHealth.ToString();
+        scoreDisplay.text = score.ToString();
 
         if (currHealth <= 0)
         {
             Die();
+        }
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            //attack
+            Attack();
         }
 
         if (isGrounded)
@@ -63,6 +82,7 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
+        
         if (playerRB.position.x <= offscreenX || playerRB.position.y <= offscreenY)
         {
             currHealth = 0;
@@ -76,6 +96,19 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
     }
 
+    void SetHealth(int newHealth)
+    {
+        if (newHealth > hearts.Length)
+            newHealth = hearts.Length; //can't exceed maximum num of hearts
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < newHealth)
+                hearts[i].sprite = fullHeart;
+            else
+                hearts[i].sprite = emptyHeart;
+        }
+    }
+
 
     void Jump()
     {
@@ -87,8 +120,38 @@ public class PlayerController : MonoBehaviour
 
     void TakeDamage(int dmg)
     {
-        currHealth -= dmg;
+        Debug.Log("took a hit");
+        if (currHealth <= 0)
+        {
+            Die();
+        }
+        currHealth -= 1;
+        SetHealth(currHealth);
     }
+
+    void Attack()
+    {
+        Vector2 bulletStartPos = new Vector2(transform.position.x + 0.3f, transform.position.y);
+        Instantiate(bullet, bulletStartPos, Quaternion.identity);
+        
+    }
+
+    void IncreaseScore(int amount)
+    {
+        score+= amount;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Coin")
+        {
+            Debug.Log("wat");
+            IncreaseScore(1);
+            Destroy(collision.gameObject);
+        }
+    }
+
+
 
     void Die()
     {

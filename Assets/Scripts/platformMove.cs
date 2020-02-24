@@ -5,8 +5,8 @@ using UnityEngine;
 public class platformMove : MonoBehaviour
 {
    public GameObject effect;
+    public float moveSpeed;
 
-    public float platformMoveSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,7 @@ public class platformMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float offset = Time.deltaTime * platformMoveSpeed;
+        float offset = Time.deltaTime * moveSpeed;
         transform.position = new Vector2(transform.position.x - offset, transform.position.y);
     }
 
