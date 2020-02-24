@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
     private Vector2 targetPos;
 
     public int health;
+    public int numJumps;
 
     public GameObject moveEffect;
     public Animator camAnim;
