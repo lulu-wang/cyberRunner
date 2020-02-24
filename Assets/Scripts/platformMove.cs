@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class platformMove : MonoBehaviour
 {
+   public GameObject effect;
 
     public float platformMoveSpeed;
     // Start is called before the first frame update
@@ -18,4 +19,16 @@ public class platformMove : MonoBehaviour
         float offset = Time.deltaTime * platformMoveSpeed;
         transform.position = new Vector2(transform.position.x - offset, transform.position.y);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Instantiate(effect, transform.position, Quaternion.identity);
+
+        }
+
+    }
+
+
 }

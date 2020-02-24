@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject platformSpawner;
     public GameObject restartDisplay;
+    public GameObject effect;
+
 
 
     private void Start()
@@ -79,6 +81,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 jumpVector = new Vector2(playerRB.velocity.x, jumpSpeed);
         playerRB.velocity = jumpVector;
+        Instantiate(effect, transform.position, Quaternion.identity);
 
     }
 
