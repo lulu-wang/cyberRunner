@@ -7,6 +7,7 @@ public class enemyBulletBehavior : MonoBehaviour
 
     public float bulletSpeed;
     public int bulletDamage;
+    public bool isSpecialBullet;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,11 @@ public class enemyBulletBehavior : MonoBehaviour
     void Update()
     {
         Vector2 newPos = new Vector2(transform.position.x - bulletSpeed * Time.deltaTime,
-            transform.position.y + 0.5f * bulletSpeed * Time.deltaTime);
+                        transform.position.y + 0.5f * bulletSpeed * Time.deltaTime);
+        if (isSpecialBullet) {
+            newPos = new Vector2(transform.position.x - bulletSpeed * Time.deltaTime, transform.position.y);
+        } 
+        
         transform.position = newPos;
     }
 

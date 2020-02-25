@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     public GameObject platformSpawner;
     public GameObject restartDisplay;
     public GameObject restartScore;
-    //public GameObject effect;
+    public GameObject instructText;
     
     public Text scoreDisplay;
     public Image[] hearts;
@@ -46,13 +46,16 @@ public class PlayerController : MonoBehaviour
         offscreenY = -3.44f;
         currHealth = hearts.Length;
         currExtraJumps = extraJumps;
+        instructText.SetActive(true);
+        InvokeRepeating("IncreaseScore", 1f, 1f);
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        // Debug.Log(transform.position.y);
+
+        
         scoreDisplay.text = score.ToString();
 
         if (currHealth <= 0)
@@ -119,14 +122,14 @@ public class PlayerController : MonoBehaviour
 
     void TakeDamage(int dmg)
     {
-        Debug.Log("took a hit");
+        // Debug.Log("took a hit");
         currHealth -= dmg;
         SetHealth(currHealth);
     }
 
     void Heal(int dmg)
     {
-        Debug.Log("heal 1");
+        // Debug.Log("heal 1");
         currHealth = Mathf.Min(currHealth + dmg, 5);
         SetHealth(currHealth);
     }
@@ -139,6 +142,11 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    void IncreaseScore()
+    {
+        score+= 1;
+    }
+
     void IncreaseScore(int amount)
     {
         score+= amount;
@@ -148,8 +156,8 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.tag == "Coin")
         {
-            Debug.Log("wat");
-            IncreaseScore(1);
+            // Debug.Log("wat");
+            IncreaseScore(5);
             Destroy(collision.gameObject);
         }
 		if (collision.tag == "healer")
@@ -165,7 +173,7 @@ public class PlayerController : MonoBehaviour
     void Die()
     {
         currHealth = 0;
-        Debug.Log("dead");
+        // Debug.Log("dead");
         platformSpawner.SetActive(false);
 
         restartDisplay.SetActive(true);

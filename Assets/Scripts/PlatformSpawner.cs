@@ -40,7 +40,7 @@ public class PlatformSpawner : MonoBehaviour
         }
         else
         {
-            currWaitTime -= Time.deltaTime;
+            currWaitTime -= Time.deltaTime*2;
         }
     }
 }

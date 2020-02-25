@@ -78,5 +78,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: platformLong
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8332323151748201084, guid: 88a8c9b41c63541fb9d04f4af414a34b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 88a8c9b41c63541fb9d04f4af414a34b, type: 3}

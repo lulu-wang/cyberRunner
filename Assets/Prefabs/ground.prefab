@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8165268175824970062}
   - component: {fileID: 773536194483768294}
   - component: {fileID: -2123064844828646800}
-  - component: {fileID: 2245158474358229477}
   m_Layer: 8
   m_Name: ground
   m_TagString: Untagged
@@ -123,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 3901957647716783628, guid: 5eb8380d244994b929e4759d163c7e2b, type: 3}
-  moveSpeed: 0
+  moveSpeed: 4
 --- !u!114 &-2123064844828646800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,16 +136,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 7
---- !u!114 &2245158474358229477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8165268175824970051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2669e4286947485e88fe29012d12a91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 4

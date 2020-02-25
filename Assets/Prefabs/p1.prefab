@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &5026474569672451569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1280188631944989732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d2bfe8035dd9064b8c1f1e6b7e6c691, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifetime: 8
 --- !u!1001 &4896743774993052842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34,17 +21,17 @@ PrefabInstance:
     - target: {fileID: 1516228353105025979, guid: cbb7c82397dd44cba8d99eafc2c09e07,
         type: 3}
       propertyPath: startWaitTime
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1516228353105025979, guid: cbb7c82397dd44cba8d99eafc2c09e07,
         type: 3}
       propertyPath: waitTimeMin
-      value: 0.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1516228353105025979, guid: cbb7c82397dd44cba8d99eafc2c09e07,
         type: 3}
       propertyPath: waitTimeMax
-      value: 2
+      value: 3.33
       objectReference: {fileID: 0}
     - target: {fileID: 1516228353105025979, guid: cbb7c82397dd44cba8d99eafc2c09e07,
         type: 3}
@@ -86,7 +73,7 @@ PrefabInstance:
     - target: {fileID: 6009247806660268587, guid: cbb7c82397dd44cba8d99eafc2c09e07,
         type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 6956120446778675258, guid: cbb7c82397dd44cba8d99eafc2c09e07,
         type: 3}
@@ -146,9 +133,3 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2419213107813107648, guid: cbb7c82397dd44cba8d99eafc2c09e07, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cbb7c82397dd44cba8d99eafc2c09e07, type: 3}
---- !u!1 &1280188631944989732 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5922407524283447438, guid: cbb7c82397dd44cba8d99eafc2c09e07,
-    type: 3}
-  m_PrefabInstance: {fileID: 4896743774993052842}
-  m_PrefabAsset: {fileID: 0}

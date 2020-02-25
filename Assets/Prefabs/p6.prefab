@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 2887111551942583396, guid: 4cb89326833dd400bab04fffcae96557,
         type: 3}
       propertyPath: m_Name
-      value: platformEnemyPair
+      value: p6
       objectReference: {fileID: 0}
     - target: {fileID: 4513910326626398120, guid: 4cb89326833dd400bab04fffcae96557,
         type: 3}
@@ -73,5 +73,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 3e67c991535bf45e0bd03d32d0ec2ab5,
         type: 3}
+    - target: {fileID: 4607495572680377712, guid: 4cb89326833dd400bab04fffcae96557,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 3.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cb89326833dd400bab04fffcae96557, type: 3}

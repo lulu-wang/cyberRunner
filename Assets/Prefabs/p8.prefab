@@ -177,10 +177,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 6224367573799434924, guid: 7530a40e892954e5096ebe11b6e79326, type: 3}
-  worth: 0
-  startWaitTime: 100
-  waitTimeMin: 0
-  waitTimeMax: 0
+  startWaitTime: 1.2
+  waitTimeMin: 2.4
+  waitTimeMax: 3
   deatheffect: {fileID: 3901957647716783628, guid: 27f83352fa818418bb452336b5c2add5,
     type: 3}
 --- !u!114 &1462293878665669224
@@ -195,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2669e4286947485e88fe29012d12a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 3.3
 --- !u!114 &927527074401331140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,7 +218,7 @@ PrefabInstance:
     - target: {fileID: 96191089259212695, guid: 88a8c9b41c63541fb9d04f4af414a34b,
         type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 96191089259212697, guid: 88a8c9b41c63541fb9d04f4af414a34b,
         type: 3}

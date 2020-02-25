@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2669e4286947485e88fe29012d12a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 3.3
 --- !u!114 &4285916604954882783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2669e4286947485e88fe29012d12a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 3.3
 --- !u!114 &6718110605803981495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 96191089259212695, guid: 88a8c9b41c63541fb9d04f4af414a34b,
         type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 96191089259212697, guid: 88a8c9b41c63541fb9d04f4af414a34b,
         type: 3}

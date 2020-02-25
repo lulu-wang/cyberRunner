@@ -7,8 +7,6 @@ public class EnemyBehavior : MonoBehaviour
 
     public GameObject bullet;
 
-    public int worth;
-
 
     //enemy attack intervals
     private float currWaitTime;
@@ -44,7 +42,8 @@ public class EnemyBehavior : MonoBehaviour
 
     void Attack()
     {
-        Instantiate(bullet, transform.position, Quaternion.identity);
+        Vector2 bulletPos = new Vector2 (transform.position.x - 0.5f, transform.position.y);
+        Instantiate(bullet, bulletPos, Quaternion.identity);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
