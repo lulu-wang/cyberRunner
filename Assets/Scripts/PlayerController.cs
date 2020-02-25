@@ -29,10 +29,9 @@ public class PlayerController : MonoBehaviour
 
     public GameObject platformSpawner;
     public GameObject restartDisplay;
+    public GameObject restartScore;
     //public GameObject effect;
     
-
-    public Text healthDisplay;
     public Text scoreDisplay;
     public Image[] hearts;
     public Sprite fullHeart;
@@ -43,7 +42,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         playerRB = GetComponent<Rigidbody2D>();
-        offscreenX = -5.0f;
+        offscreenX = -4.89f;
         offscreenY = -3.44f;
         currHealth = hearts.Length;
         currExtraJumps = extraJumps;
@@ -53,8 +52,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(currExtraJumps);
-        healthDisplay.text = currHealth.ToString();
+        // Debug.Log(transform.position.y);
         scoreDisplay.text = score.ToString();
 
         if (currHealth <= 0)
@@ -86,7 +84,7 @@ public class PlayerController : MonoBehaviour
         
         if (playerRB.position.x <= offscreenX || playerRB.position.y <= offscreenY)
         {
-            currHealth = 0;
+            Die();
         }
 
 
@@ -122,22 +120,14 @@ public class PlayerController : MonoBehaviour
     void TakeDamage(int dmg)
     {
         Debug.Log("took a hit");
-        if (currHealth <= 0)
-        {
-            Die();
-        }
-        currHealth -= 1;
+        currHealth -= dmg;
         SetHealth(currHealth);
     }
 
     void Heal(int dmg)
     {
         Debug.Log("heal 1");
-        if (currHealth <= 0)
-        {
-            Die();
-        }
-        currHealth += 1;
+        currHealth = Mathf.Min(currHealth + dmg, 5);
         SetHealth(currHealth);
     }
 
@@ -174,9 +164,15 @@ public class PlayerController : MonoBehaviour
 
     void Die()
     {
+        currHealth = 0;
         Debug.Log("dead");
         platformSpawner.SetActive(false);
+
         restartDisplay.SetActive(true);
+        
+        restartScore.GetComponent<Text>().text = score.ToString();
+
+        restartScore.SetActive(true);
 
         Destroy(this.gameObject);
     }
